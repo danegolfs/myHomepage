@@ -16,22 +16,11 @@ body {
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
 
-
-/* MAIN LOGO */
-
-.mainLogo {
-  font-size: 40px;
+.name {
+  font-size: 30px;
   color: white;
   margin-right: 50px;
 }
-
-.lowerLogo {
-  font-size: 35px;
-}
-
-
-
-/* Special class on .container surrounding .navbar, used for positioning it into place. */
 
 .navbar>.container>.navbar-collapse>.nav>li>a {
   color: #5a5a5a;
@@ -46,9 +35,6 @@ body {
   z-index: 20;
 }
 
-
-
-/* Flip around the padding for proper display in narrow viewports */
 
 .navbar {
   padding-right: 40px;
@@ -69,9 +55,21 @@ body {
 
 .bannerContainer {
   background-color: #51B9D3;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 7px;
+  padding-bottom: 7px;
   margin-bottom: 30px;
+}
+
+
+/* About Section
+-------------------------------------------------- */
+
+.aboutText {
+  font-size: 22px;
+}
+
+.aboutPic {
+  border-radius: 10px;
 }
 
 
