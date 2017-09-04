@@ -1,0 +1,83 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+
+
+/* Padding below the footer and lighter body text */
+
+body {
+  padding-bottom: 40px;
+  /*color: #rgb(255, 255, 255)*/
+  color: #5a5a5a;
+  font-family: raleway;
+}
+
+
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+
+/* MAIN LOGO */
+
+.mainLogo {
+  font-size: 40px;
+  color: white;
+  margin-right: 50px;
+}
+
+.lowerLogo {
+  font-size: 35px;
+}
+
+
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+
+.navbar>.container>.navbar-collapse>.nav>li>a {
+  color: #5a5a5a;
+}
+
+.navbar-wrapper {
+  font-size: 14px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+}
+
+
+
+/* Flip around the padding for proper display in narrow viewports */
+
+.navbar {
+  padding-right: 40px;
+}
+
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.navbar-wrapper .navbar .container {
+  width: auto;
+}
+
+.nav-item {
+  font-size: 16px;
+}
+
+.bannerContainer {
+  background-color: #51B9D3;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 30px;
+}
+
+
+/* Social Media */
+
+.social-media {
+  width: 32px;
+  height: 32px;
+}
