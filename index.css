@@ -14,6 +14,9 @@ body {
 
 
 
+
+
+
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
 
@@ -67,8 +70,25 @@ body {
 }
 
 
+
+
+
 /* Home Section
 -------------------------------------------------- */
+
+.homeText {
+  padding: 6px;
+  position: fixed;
+  top: 52%;
+  -webkit-transform: translateY(-52%);
+  -moz-transform: translateY(-52%);
+  -ms-transform: translateY(-52%);
+  -o-transform: translateY(-52%);
+  transform: translateY(-52%);
+}
+
+
+
 
 
 /* About Section
@@ -81,6 +101,9 @@ body {
 .aboutPic {
   border-radius: 10px;
 }
+
+
+
 
 
 
