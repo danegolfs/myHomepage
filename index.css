@@ -13,6 +13,7 @@ body {
 
 
 
+
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
 
@@ -60,10 +61,9 @@ body {
   margin-bottom: 30px;
 }
 
+
 /* Home Section
 -------------------------------------------------- */
-
-
 
 
 /* About Section
@@ -78,9 +78,23 @@ body {
 }
 
 
+
 /* Social Media */
 
 .social-media {
   width: 32px;
   height: 32px;
+}
+
+@media(max-width: 450px) {
+  .name {
+    font-size: 25px;
+    margin-top: 15px;
+  }
+
+  .bannerContainer {
+    background-color: #51B9D3;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
 }
