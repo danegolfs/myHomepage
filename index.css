@@ -105,7 +105,7 @@ body {
 -------------------------------------------------- */
 
 .aboutText {
-  font-size: 22px;
+  font-size: 18px;
 }
 
 .aboutPic {
@@ -113,9 +113,13 @@ body {
 }
 
 
+/* VariChill Section
+-------------------------------------------------- */
 
-
-
+.nav-link {
+  color: black;
+  text-decoration: none;
+}
 
 
 /* Social Media */

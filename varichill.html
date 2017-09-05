@@ -46,19 +46,120 @@
           <h4>Our Senior Design Project</h4>
           <p>Each year at the University of Pennsylvania, senior engineering students form groups and devote two semesters of work to one project. I teamed up with an Electrical Engineer, John Masson, and two Mechanical Engineers, Julian Mickelson and Leandro Grigera, to form an interdisciplinary team. Our goal was to create a solar powered vaccine refrigerator capable of keeping vaccines at their required temperatures while undercutting the current market cost for refrigerators of equal utility. To read more about our award wining project, read below.</p>
         </div>
-        <div>
-          <h5>Abstract</h5>
-          <p>
-            Each year, more than 3 million people die from diseases that can be prevented by widely available vaccines. Approximately 1.5 million of these deaths are children less than 5 years old. The primary reason for these death is that these vaccines must be stored at a specific temperature at all times. The goal of our project is to create a solar powered refrigerator that can be used for vaccine storage in developing nations - particularly in areas with limited access to the power grid. As per guidelines set by the World Health Organization, the fridge will maintain an ambient temperature of between 2 and 8 degrees Celsius and will be able to maintain said temperature without access to solar power for up to 5 days. We hope to achieve this goal through the use of thermoelectric cooling elements, ultra-effective insulation and a passive heat exchange system. A wireless-enabled embedded system will monitor and control the refrigerator's temperature, duty cycle and other key features. The entire system can be powered via a solar panel array, the battery backup or grid power (when it is available).
-          </p>
+        <ul class="nav nav-tabs" role="tablist">
+          <li class="nav-item">
+            <a class="active nav-link" href="#abstract" role="tab" data-toggle="tab">Abstract</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#problem" role="tab" data-toggle="tab">Problem</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#solution" role="tab" data-toggle="tab">Solution</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#implementation" role="tab" data-toggle="tab">Implementation</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#results" role="tab" data-toggle="tab">Results</a>
+          </li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane fade active show" id="abstract" role="tabpanel">
+            </br>
+            <h5>Abstract</h5>
+            <p>
+              Each year, more than 3 million people die from diseases that can be prevented by widely available vaccines. Approximately 1.5 million of these deaths are children less than 5 years old. The primary reason for these death is that these vaccines must be stored at a specific temperature at all times. The goal of our project is to create a solar powered refrigerator that can be used for vaccine storage in developing nations - particularly in areas with limited access to the power grid. As per guidelines set by the World Health Organization, the fridge will maintain an ambient temperature of between 2 and 8 degrees Celsius and will be able to maintain said temperature without access to solar power for up to 5 days. We hope to achieve this goal through the use of thermoelectric cooling elements, ultra-effective insulation and a passive heat exchange system. A wireless-enabled embedded system will monitor and control the refrigerator's temperature, duty cycle and other key features. The entire system can be powered via a solar panel array, the battery backup or grid power (when it is available).
+            </p>
+          </div>
+          <div class="tab-pane fade" id="problem" role="tabpanel">
+            </br>
+            <h5>Problem</h5>
+            <p>
+              Most vaccine refrigerator solutions nowadays are large, expensive, and use vapor-compression technology that has been around since the early 1900’s. These fridges are difficult to transport and should they break down, the compressor technology makes them difficult and expensive to repair. Additionally, the refrigerant in compressor driven systems, if released, is as harmful to our atmosphere as driving a car for six months. Here exists an opportunity to create a more environmentally conscious and agile solution that fixes many of the shortcomings of the mainstream market’s products.
+            </p>
+          </div>
+          <div class="tab-pane fade" id="solution" role="tabpanel">
+            </br>
+            <h5>Solution</h5>
+            <p>
+              To avoid the several pitfalls of compressor driven refrigerators, we utilize a solid-state Thermoelectric (TE) cooler as the source of refrigeration. When DC power is applied, a large temperature differential forms across the TE unit. With a TE cooler at the heart of the cooling unit, our fridge is able to reach the target temperature range of 35.6 - 46.5°F. However, not only does a vaccine fridge need to store these vaccines within this temperature range, but it also needs to be able to maintain this range in perpetuity. A pitfall of a TE cooler is that it must always remain on because the TE unit itself creates a significant vulnerability in the container’s insulation allowing heat to rapidly flow into the vaccine chamber.
+              </br>
+              </br>To address this, we have devised a two chamber design, in which the cooling (top) chamber contains the TE cooling unit and the vaccine (bottom) chamber stores the vaccines and thermal batteries. The chambers are linked via a sealable hole. When cooling, the hole is open and the TE unit cools both chambers (with the aid of fans for proper air circulation). The chambers are made of polystyrene, and lined with melamine for additional insulation. Once cooled to the target range, a servo-driven rack and pinion mechanism forces a plug into the hole and seals the vaccine chamber. When the TE cooler turns off, the vaccine chamber will remain cold, as the cooling (top) chamber rapidly warms. This system allows us to implement a duty cycle so the cooling unit is on for only a fraction of the time, thus extending the lifetime of the battery when solar power is not available.
+            </p>
+          </div>
+          <div class="tab-pane fade" id="implementation" role="tabpanel">
+            </br>
+            <h5>Click Below To See Our Product</h5>
+            </br>
+            <div id="implSlide" class="accordian" role="tablist">
+              <div class="card">
+                <div class="card-header" role="tab" id="headingOne">
+                  <h5 class="mb-0">
+                    <a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Side CAD Cutout
+                    </a>
+                  </h5>
+                </div>
+                <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+                  <div class="card-body">
+                    <img class="img-fluid" src="pics/sideView.jpg" />
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" role="tab" id="headingTwo">
+                  <h5 class="mb-0">
+                    <a data-toggle="collapse" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                      Full Product Design
+                    </a>
+                  </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+                  <div class="card-body">
+                    <img class="img-fluid" src="pics/theShot.jpg" />
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" role="tab" id="headingThree">
+                  <h5 class="mb-0">
+                    <a data-toggle="collapse" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                      CAD Rendering
+                    </a>
+                  </h5>
+                </div>
+                <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
+                  <div class="card-body">
+                    <img class="img-fluid" src="pics/heroCad.png" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="results" role="tabpanel">
+            </br>
+            <h5>Results</h5>
+            <p>
+              Our first iteration of this fridge was a single chamber design. It was cooled by a TE module - sandwiched between 2 heat sinks and fans for proper air circulation and heat dissipation. As shown by the graph below, this cooling unit was able to reach the desired temperature range. But in this configuration, the fridge was unable to maintain the desired temperature range for more than 2.5 minutes, once the cooling unit was turned off.
+              </br>
+              </br>
+              <img class="img-fluid" src="pics/graph1.png" />
+              </br>
+              </br>Evident in the second chart, the dual chamber configuration effectively maintained the desired temperature range without need for continuous operation by the TE cooling unit. This fridge can keep vaccines properly stored while implementing approximately a 60% duty cycle. This increases the life time of the battery backup by 1.67 times, helping to maintain the necessary temperatures for several days without access to solar or grid power.
+              </br>
+              </br>
+              <img class="img-fluid" src="pics/graph2.png" />
+            </p>
+          </div>
         </div>
       </div>
     </div>
-    <hr class="coach-divider">
-    <!-- FOOTER -->
-    <footer>
-      <p>&copy; 2017 Dane Walton</p>
-    </footer>
+  </div>
+  <hr class="coach-divider">
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2017 Dane Walton</p>
+  </footer>
   </div>
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
