@@ -14,9 +14,10 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
   <link href="index.css" rel="stylesheet">
 </head>
-  
+
 <body>
   <div class="bannerContainer">
+    <div class="container">
       <nav class="navbar navbar-expand-lg navbar-light navbar-fixed">
         <div class="navbar-brand">
           <p class="name"><a href="index.html">Dane Walton</a></p>
@@ -34,6 +35,7 @@
           </div>
         </div>
       </nav>
+    </div>
   </div>
   <div class="container" id="introText">
     <div class="row featurette justify-content-center homeTextWrap">
@@ -52,9 +54,9 @@
   $(document).ready(function() {
     $("#toggleButton").on("click", function(event) {
       if ($("#introText").is(":visible")) {
-        $("#introText").fadeOut("slow", function(){});
+        $("#introText").fadeOut("slow", function() {});
       } else {
-        $("#introText").fadeIn("slow", function(){});
+        $("#introText").fadeIn("slow", function() {});
       }
     });
   });
