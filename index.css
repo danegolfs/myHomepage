@@ -17,6 +17,7 @@ body {
 
 
 
+
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
 
@@ -74,11 +75,13 @@ body {
 
 
 
+
 /* Home Section
 -------------------------------------------------- */
 
-.homeText {
-  padding: 6px;
+.homeTextWrap {
+
+  margin-right: 12px;
   position: fixed;
   top: 52%;
   -webkit-transform: translateY(-52%);
@@ -87,6 +90,11 @@ body {
   -o-transform: translateY(-52%);
   transform: translateY(-52%);
 }
+
+.homeText {
+  font-size: 18px;
+}
+
 
 
 
@@ -102,6 +110,7 @@ body {
 .aboutPic {
   border-radius: 10px;
 }
+
 
 
 
