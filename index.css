@@ -23,6 +23,11 @@ body {
   margin-right: 50px;
 }
 
+.name a {
+  color: white;
+  text-decoration: none;
+}
+
 .navbar>.container>.navbar-collapse>.nav>li>a {
   color: #5a5a5a;
 }
