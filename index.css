@@ -25,6 +25,7 @@ body {
   font-size: 30px;
   color: white;
   margin-right: 50px;
+  padding-top: 10px;
 }
 
 .name a {
@@ -60,6 +61,7 @@ body {
 }
 
 .nav-item {
+  text-align: center;
   font-size: 16px;
 }
 
