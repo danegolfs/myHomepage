@@ -8,7 +8,7 @@
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
   <meta name="description" content="">
   <meta name="author" content="Dane Walton">
-  <link rel="icon" href="pics/letter-d.png">  
+  <link rel="icon" href="pics/letter-d.png">
   <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500" rel="stylesheet">
   <title>Dane Walton</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
@@ -22,7 +22,7 @@
         <div class="navbar-brand">
           <p class="name"><a href="index.html">Dane Walton</a></p>
         </div>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarID" aria-controls="navbarID" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarID" aria-controls="navbarID" aria-expanded="false" aria-label="Toggle navigation" id="toggleButton">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarID">
@@ -37,7 +37,7 @@
       </nav>
     </div>
   </div>
-  <div class="container top-comp">
+  <div class="container" id="introText">
     <div class="row featurette justify-content-center homeText">
       <div class="col-md-5">
         <h1>hi</h1>
@@ -47,9 +47,20 @@
       </div>
     </div>
   </div>
-  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  <script>
+  $(document).ready(function() {
+    $("#toggleButton").on("click", function(event) {
+      if ($("#introText").is(":visible")) {
+        $("#introText").hide("slow");
+      } else {
+        $("#introText").show("slow");
+      }
+    });
+  });
+  </script>
 </body>
 
 </html>
