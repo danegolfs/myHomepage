@@ -13,6 +13,7 @@
   <title>Dane Walton</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
   <link href="index.css" rel="stylesheet">
+  <link rel="stylesheet" href="justifiedGallery.min.css">
 </head>
 
 <body>
@@ -39,13 +40,52 @@
   </div>
   <div class="container">
     <div class="row featurette justify-content-center">
-      <div class="col-md-8 offset-md-2">
+      <div class="col-md-10 offset-md-1">
         <h1>Photography</h1>
         </br>
-        <div class="lead text-justify">
-          <!-- <p>If I'm not broadening my education in computer engineering, playing golf, or surfing a wave or two, I'm probably taking photos.</p> -->
-          <p>Coming Soon</p>
+        <div id="mygallery">
+          <a href="pics/gallery/nano.jpg">
+            <img alt="nanotech" src="pics/gallery/nano.jpg"/>
+          </a>
+          <a href="pics/gallery/store.jpg">
+            <img alt="bookstore" src="pics/gallery/store.jpg"/>
+          </a>
+          <a href="pics/gallery/self.jpg">
+            <img alt="self" src="pics/gallery/self.jpg"/>
+          </a>
+          <a href="pics/gallery/kidmom.jpg">
+            <img alt="boy and his mom" src="pics/gallery/kidmom.jpg"/>
+          </a>
+          <a href="pics/gallery/flaghand.jpg">
+            <img alt="flag in hand" src="pics/gallery/flaghand.jpg"/>
+          </a>
+          <a href="pics/gallery/mirror.jpg">
+            <img alt="bride to be" src="pics/gallery/mirror.jpg"/>
+          </a>
+          <a href="pics/gallery/shoes.jpg">
+            <img alt="secret boots" src="pics/gallery/shoes.jpg"/>
+          </a>
+          <a href="pics/gallery/flag.jpg">
+            <img alt="flag" src="pics/gallery/flag.jpg"/>
+          </a>
+          <a href="pics/gallery/shirt.jpg">
+            <img alt="aesthetics" src="pics/gallery/shirt.jpg"/>
+          </a>
+          <a href="pics/gallery/xpillar.jpg">
+            <img alt="x" src="pics/gallery/xpillar.jpg"/>
+          </a>
+          <a href="pics/gallery/window.jpg">
+            <img alt="tilted" src="pics/gallery/window.jpg"/>
+          </a>
+          <a href="pics/gallery/walk.jpg">
+            <img alt="solitudinous" src="pics/gallery/walk.jpg"/>
+          </a>
+          <a href="pics/gallery/paintball.jpg">
+            <img alt="paintball in the snow" src="pics/gallery/paintball.jpg"/>
+          </a>
+          <!-- other images... -->
         </div>
+
       </div>
     </div>
     <hr class="coach-divider">
@@ -57,6 +97,14 @@
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  <script src="jquery.justifiedGallery.min.js"></script>
+          <script>
+        $("#mygallery").justifiedGallery({
+          rowHeight : 200,
+          maxRowHeight: 100,
+    lastRow : 'center'
+        });
+        </script>
 </body>
 
 </html>
