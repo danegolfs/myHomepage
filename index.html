@@ -37,7 +37,7 @@
       </nav>
     </div>
   </div>
-  <div class="container" id="introText">
+  <div class="container" id="introText" style="display:none;">
     <div class="row featurette justify-content-center homeTextWrap">
       <div class="col-md-5">
         <h1>hi</h1>
@@ -52,6 +52,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
   <script>
   $(document).ready(function() {
+    $("#introText").fadeIn(1500).removeClass("");
     $("#toggleButton").on("click", function(event) {
       if ($("#introText").is(":visible")) {
         $("#introText").fadeOut("slow", function() {});
