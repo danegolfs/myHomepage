@@ -52,7 +52,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
   <script>
   $(document).ready(function() {
-    $("#introText").fadeIn(1500).removeClass("");
+    $("#introText").fadeIn(1500);
     $("#toggleButton").on("click", function(event) {
       if ($("#introText").is(":visible")) {
         $("#introText").fadeOut("slow", function() {});
